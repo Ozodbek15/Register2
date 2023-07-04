@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .div1{
+            background-color: red;
+        }
+        .h70{
+            text-align: center;
+            margin:40px auto ;
+            background: black;
+            width: 250px;
+            height: 70px;
+            text-transform:capitalize;
+            padding: 10px;
+            color: red;
+            font-size: 32px;
+            margin-top: 100px;     
+        }
+        .div1 .ul{
+            display: block;
+            background-color: black;
+            color: white;
+        }
+        .ul li{
+            display: inline-block;
+            list-style-type: none;
+            text-transform: capitalize;
+            padding: 20px;
+        }
+        .h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .p{
+            text-align: center;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                padding: 50px;
+                width: 70%;
+                margin-left: 200px;
+                margin-top: 50px;
+        }
+        .div2{
+            background-color: white;
+            color: black;
+        }
+        .div2 h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        .div3{
+            margin-left: 200px;
+            width: 20%;
+        }
+        .div3 img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 80px;
+            margin-top: 90px;
+        }
+        .div4{
+            margin-left: 600px;
+            margin-top: -220px;
+            width: 20%;
+        }
+        .div4 img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 80px;
+        }
+        .div4 p{
+            text-align: justify;
+        }
+        .div5{
+            margin-left: 1000px;
+            margin-top: -210px;
+            width: 20%;
+        }
+        .div5 img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 80px;
+            }
+            .div5 p{
+                text-align: justify;
+            }
+            .div6{
+                background-color: brown;
+            }
+            .div6 h1{
+                text-transform: capitalize;
+                text-align: center;
+            }
+            .div6 p{
+                text-align: center;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                padding: 20px;
+                width: 70%;
+                margin-left: 200px;
+                margin-top: 50px;
+            }
+            .div7{
+                display: flex;
+                width: 20%;
+                height: 20%;
+            }
+            .div7 img{
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                margin-top: 50px;
+                margin-left: 200px;
+            }
+            .div8{
+                display: flex;
+                width: 20%;
+                height: 20%;
+            }
+            .div8 img{
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                margin-left: 200px;
+            }
+            .div9{
+                display: flex;
+                width: 20%;
+                height: 20%;
+            }
+            .div9 img{
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                margin-left: 600px;
+                margin-top: -429px;
+            }
+            .div10{
+                display: flex;
+                width: 20%;
+                height: 20%;
+            }
+            .div10 img{
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                margin-left: 600px;
+                margin-top: -210px;
+            }.div11{
+                display: flex;
+                width: 20%;
+                height: 20%;
+            }
+            .div11 img{
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                margin-left: 1000px;
+                margin-top: -429px;
+            }
+            .div12{
+                display: flex;
+                width: 20%;
+                height: 20%;
+            }
+            .div12 img{
+                width: 200px;
+                height: 200px;
+                margin-left: 1000px;
+                margin-top: -210px;
+            }
+            .div13{
+                background-color: gray;
+            }
+            .div13 h1{
+                text-align: center;
+            }
+            .div14{
+             width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 630px;
+            margin-top: 60px;
+            }
+            .div15{
+             width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 730px;
+            margin-top: -50px;
+            }
+            .div16{
+                width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 820px;
+            margin-top: -50px;
+            }
+            .div17{
+                background-color: black;
+            }
+            .div17 p{
+                text-align: center;
+                color: white;
+                height: 50px;
+                padding: 15px;
+            }
+           .div18{
+            display: inline-block;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            }
+            .div18 div{
+                width: 4rem;
+                height: 4rem;
+                border: 1px solid black;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 10px;
+            }
+            .div18 p{
+                background-color: black;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                margin: 8px;
+            }
+            @media  only screen and (max-width: 772px) {
+                .div19{
+                    flex-direction: column;
+                    
+                }
+                .div19 div{
+                    width: 80px!important;
+                }
+            }
+            @media only screen and (max-width: 772px) {
+                .div20{
+                    flex-direction: column;
+                }   
+                .div20 div{
+                    width: 80px!important;
+                }             
+            }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <ul class="ul">
+            <li>logo</li>
+            <li style="float: right;" class="li">servise</li>
+            <li style="float: right;" class="li">portfolio</li>
+            <li style="float: right;" class="li">contact</li>
+        </ul>
+        <h1 class="h1">Tech Karo, CIRCLE</h1>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur voluptate numquam excepturi officiis unde odio velit eius libero ipsa, magni dolorum voluptatem repudiandae, quod sint cumque in quas assumenda?</p>
+        <h5 class="h70">join now</h5>
+       </div>
+    
+      <div class="div2">
+        <h1>Our Servise</h1>
+      </div>
+          <div class="div19">
+                    <div class="div3">
+                     <img src="./images/html.webp" alt="">
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem sapiente quisquam voluptate doloremque! Asperiores nihil, obcaecati fugit eius sunt quisquam ab, deleniti reprehenderit accusantium sint soluta eligendi voluptatem, praesentium deserunt.</p>
+                    </div>
+                 
+                    <div class=" div4">
+                     <img src="./images/css.webp" alt="">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi officia commodi eaque expedita eligendi, assumenda laboriosam. Placeat atque fugit repellendus magnam, suscipit incidunt, adipisci natus vel corporis quasi laboriosam.</p>
+                    </div>
+                 
+                    <div class="div5">
+                     <img src="./images/js.webp" alt="">
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem sapiente quisquam voluptate doloremque! Asperiores nihil, obcaecati fugit eius sunt quisquam ab, deleniti reprehenderit accusantium sint soluta eligendi voluptatem, praesentium deserunt.</p>
+                    </div>
+                 
+                    <div class="div6">
+                     <h1>Portfolio</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci est et architecto dignissimos dolorum excepturi</p>
+                    </div>
+         </div>
+            <div class="div20">
+                      <div class="div7">
+                       <img src="./images/i (1).webp" alt="">
+                      </div>
+                      <div class="div8">
+                       <img src="./images/i (1).webp" alt="">
+                      </div>
+                      <div class="div9">
+                       <img src="./images/i (1).webp" alt="">
+                      </div>
+                      <div class="div10">
+                       <img src="./images/i (1).webp" alt="">
+                      </div>
+                      <div class="div11">
+                       <img src="./images/i (1).webp" alt="">
+                      </div>
+                      <div class="div12">
+                       <img src="./images/i (1).webp" alt="">
+                      </div>
+             </div>
+                
+        <div class="div13">
+        <h1>Contact Us</h1>
+          <div class="div18">
+        <div class="m1"><p></p></div>
+        <div class="m2"><p></p></div>
+        <div class="m3"><p></p></div>
+          </div>
+        </div>
+    
+      <div class="div17">
+        <p>Lorem ipsum dolor sit amet consectetur </p>
+      </div>
+</body>
+</html>
